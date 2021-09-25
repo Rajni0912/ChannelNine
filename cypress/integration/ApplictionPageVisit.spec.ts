@@ -4,7 +4,7 @@ import AppPage from '../pages/AppPage';
 
 context('AppTest', () => {
     const appPage = new AppPage();
-    beforeEach(() => {
+    before(() => {
         appPage.visit()
     })
 
@@ -15,7 +15,8 @@ context('AppTest', () => {
 
     it('[02] Test: Subscription Prompt Visible', () => {
         // Check if Subscription Prompt is visible
-        appPage.getActiveSubscriptionPrompt().should("be.visible");
+        const element = appPage.getActiveSubscriptionPrompt()
+        element.should("exist") && element.should("be.visible")
         appPage.getSubscriptionPromptTitle().should("have.text","Save 50% for your first 3 months.");
     })
 
@@ -32,7 +33,6 @@ context('AppTest', () => {
         // wait 10 seconds for the pop-up window to close
         cy.wait(10000);
         // check if the data-testid value = SubscriptionPrompt-false
-        appPage.getInactiveSubscriptionPrompt().should('be.visible');
-
+        appPage.getInactiveSubscriptionPrompt().should("exist") 
     })
 })

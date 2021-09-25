@@ -14,7 +14,7 @@ class AppPage {
     }
     // checking the subscription prompt pop up
     getActiveSubscriptionPrompt() {
-        return cy.get('[data-testid="SubscriptionPrompt-true"]');
+        return cy.get('[data-testid="SubscriptionPrompt-true"]')
     }
     // Checking the subscription prompt pop up title
     getSubscriptionPromptTitle() {
@@ -22,7 +22,7 @@ class AppPage {
     }
     // Check if the subscription prompt disappears
     getInactiveSubscriptionPrompt() {
-        return cy.get('[data-testid="SubscriptionPrompt-false"]');
+        return cy.get('[data-testid="SubscriptionPrompt-false"]')
     }
     //Getting page footer
     getPageFooter() {
