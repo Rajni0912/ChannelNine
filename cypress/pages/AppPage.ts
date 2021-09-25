@@ -1,21 +1,25 @@
 /// <reference types="cypress" />
-   
+
 class AppPage {
-      constructor() { }
+    
+    constructor() {
+        
+     }
     visit() {
-        const SITE_URL = "https://www.afr.com/policy/foreign-affairs/capability-edge-and-keeping-south-china-sea-open-crucial--christopher-pyne-20180924-h15rq9";
-
-        return cy.visit(SITE_URL, { failOnStatusCode: false, timeout: 10000 });
+        const siteURL =  "https://www.afr.com/policy/foreign-affairs/capability-edge-and-keeping-south-china-sea-open-crucial--christopher-pyne-20180924-h15rq9";
+        return cy.visit(siteURL, { failOnStatusCode: true, timeout: 40000 });
     }
 
-    currentURL(){
-        return cy.url();
-    }
+    articleHeadline() {
 
-    getActivePopup(){
+        return cy.get('[data-testid="ArticleHeader-headline"]')
         
     }
-    getInactivePopup(){
+
+    getActivePopup() {
+
+    }
+    getInactivePopup() {
 
     }
 }

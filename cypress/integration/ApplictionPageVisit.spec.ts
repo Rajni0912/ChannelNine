@@ -8,11 +8,8 @@ context('AppTest', () => {
         appPage.visit()
     })
 
-    it('[01] Visit the Page on the site', () => {
-        // beforeEach always visits the site.
-        appPage.currentURL().then(url => {
-            url == "https://www.afr.com/policy/foreign-affairs/capability-edge-and-keeping-south-china-sea-open-crucial--christopher-pyne-20180924-h15rq9";
-
-        })
+    it('[01] Visit the Page', () => {
+        // Check Article Headline
+         appPage.pageHeader().should("have.text", "Capability edge and keeping South China Sea open crucial: Christopher Pyne ");
     })
 })
