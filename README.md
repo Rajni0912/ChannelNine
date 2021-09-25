@@ -4,4 +4,8 @@
 3. Check the installed version using  
     - node -v
     - npm -v
-5. Clone the git repo. 
+5. Clone the git repo.  into folder. Assuming that the folder is c:\projects. run command from powershell or windows terminal
+    cd c:\projects
+    git clone git@github.com:Rajni0912/ChannelNine.git into
+ 
+7. run 
