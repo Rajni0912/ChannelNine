@@ -16,5 +16,6 @@
 8. Run  following command to launch a Cypress App Preview window. There might be a delay  in opening up the App Preview window for the first time.
     > npx cypress open
 9. Click the ApplicationPageVisit.spec.ts link in the App Preview window. It will launch the Test Runner which shows the real time execution of the Test Cases including passed and failed test cases.
-10. This test execution will also capture the screenshots in cypress\screenshots\ApplictionPageVisit.spec.ts folder. Remove all the existing screenshots if you want to execute the test cases again. Cypress will not overwrite the existing files. It will create new screeshots for each execution.
-10. The screenshot files start with test id, something like test1_page-heading.png for first test.
+10. Test execution might fail for the first time for the test 2 (Check if the subscription prompt is popped up). This is because full page takes around 20-30 seconds for loading (including background requests) and meanwhile popup appears and close by itself within 1- secs. Try running test again with npx cypress open command and issue will not appear.
+11. This test execution will also capture the screenshots in cypress\screenshots\ApplictionPageVisit.spec.ts folder. Remove all the existing screenshots if you want to execute the test cases again. Cypress will not overwrite the existing files. It will create new screeshots for each execution.
+12. The screenshot files start with test id, something like test1_page-heading.png for first test.
