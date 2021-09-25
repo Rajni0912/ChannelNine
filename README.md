@@ -6,6 +6,6 @@
      > - npm -v
 5. Clone the git repo.  into folder. Assuming that the folder is c:\projects. run command from powershell or windows terminal
     > - cd c:\projects
-    > - git clone git@github.com:Rajni0912/ChannelNine.git into
+    > - git clone git@github.com:Rajni0912/ChannelNine.git into the folder
  
 7. run 
