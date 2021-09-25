@@ -15,7 +15,7 @@
 ## Subsection- Updated Date
 1. Verify that the last updated date and time is shown under companies listing.
 2. Verify that any delays in data are also communicated as text next to last updated time.
-3. Verify that data delay text should be of format " Data is <> minutes delayed"
+3. Verify that data delay text should be of format " Data is <mm> minutes delayed"
 
 ## Subsection-  All Companies Link
 
