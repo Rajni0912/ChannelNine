@@ -1,0 +1,9 @@
+{
+    "name": "channel_nine_technical_evaluation",
+    "version": "1.0.0",
+    "description": "Channel Nine Technical Evaluation",
+    "devDependencies": {
+        "cypress": "^8.4.1",
+        "typescript": "^4.4.3"
+    }
+}
